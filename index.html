@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about SushiSwap DEX - the popular decentralized cryptocurrency exchange. Understand how SushiSwap works, its features, yield farming opportunities, and how to start trading crypto on this innovative DeFi platform.">
+    <meta name="keywords" content="Sushiswap,Sushi swap DEX, Decentralized Exchange, cryptocurrency exchange, DeFi, yield farming, liquidity pools, swap tokens, crypto trading, blockchain, Ethereum, Automated Market Maker, AMM, SUSHI token, MetaMask, Web3, cryptocurrency, digital assets, decentralized finance">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="College Project">
+    <meta property="og:title" content="SushiSwap DEX - Complete Guide for Beginners">
+    <meta property="og:description" content="Discover everything about SushiSwap DEX - from basic concepts to advanced yield farming strategies. Perfect for students learning about DeFi and cryptocurrency exchanges.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sushi.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SushiSwap DEX - Complete Guide">
+    <meta name="twitter:description" content="Learn about SushiSwap decentralized exchange and how it's changing cryptocurrency trading.">
+    <title>SushiSwap DEX™ - ( Official ) Decentralized Website</title>
+    <link rel="canonical" href="https://www.sushi.com/">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #ff6b6b;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff6b6b;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            background-size: 50px 50px;
+            animation: moveBackground 20s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .cta-button:hover {
+            background: #ee5a5a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: #1a1a2e;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #ff6b6b;
+            margin: 15px auto 0;
+        }
+
+        .content-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .content-card h3 {
+            color: #1a1a2e;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .content-card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h4 {
+            color: #1a1a2e;
+            margin-bottom: 15px;
+        }
+
+        .step-by-step {
+            background: #f8f9fa;
+            padding: 60px 20px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .step-number {
+            background: #ff6b6b;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        .faq-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .faq-item h4 {
+            color: #1a1a2e;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq-item p {
+            color: #555;
+            padding-left: 20px;
+            border-left: 3px solid #ff6b6b;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 60px 20px 30px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h4 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            opacity: 0.7;
+        }
+
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+            font-size: 0.9rem;
+        }
+
+        .disclaimer strong {
+            color: #856404;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .step {
+                flex-direction: column;
+            }
+            
+            .step-number {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Sushi<span>Swap</span> Guide</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#getting-started">Get Started</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the World of SushiSwap DEX</h1>
+            <p>Discover how SushiSwap is revolutionizing cryptocurrency trading through decentralized finance. Learn everything you need to know about this innovative automated market maker platform.</p>
+            <a href="#about" class="cta-button">Start Learning</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="about">
+            <h2>What is SushiSwap?</h2>
+            <div class="content-card">
+                <p>SushiSwap is one of the most popular decentralized exchanges (DEX) in the cryptocurrency space, operating as an automated market maker (AMM) that allows users to swap various digital assets directly from their wallets without the need for intermediaries. Launched in 2020, SushiSwap has grown to become a cornerstone of the decentralized finance ecosystem, providing users with a seamless way to trade cryptocurrencies while earning rewards through liquidity provision and yield farming strategies.</p>
+                
+                <p>Unlike traditional cryptocurrency exchanges that rely on order books and centralized servers, SushiSwap uses smart contracts on the blockchain to facilitate trades automatically. This means that users maintain control of their funds at all times, connecting their Web3 wallets like MetaMask directly to the platform. The name "SushiSwap" comes from the SUSHI token, which serves as the governance token for the protocol and rewards participants who contribute to the ecosystem.</p>
+                
+                <p>The platform has evolved significantly since its inception, expanding beyond simple token swaps to offer a comprehensive suite of DeFi products including staking opportunities, BentoBox lending, and the Onsen liquidity mining program. SushiSwap operates on multiple blockchain networks including Ethereum, Polygon, Arbitrum, and Optimism, making it accessible to users across different ecosystems and providing flexibility in terms of gas fees and transaction speeds.</p>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <h2>How SushiSwap Works</h2>
+            <div class="content-card">
+                <p>Understanding how SushiSwap works is essential for anyone looking to participate in decentralized finance. At its core, SushiSwap operates using liquidity pools rather than traditional order books. These pools are created when users deposit pairs of tokens into smart contracts, which then use a mathematical formula to determine the price of assets and execute trades automatically. This innovative approach eliminates the need for market makers and allows anyone to become a liquidity provider by depositing their assets into these pools.</p>
+                
+                <p>The pricing mechanism used by SushiSwap is based on the constant product formula, which ensures that the product of the quantities of two tokens in a liquidity pool remains constant during trades. This means that as one token is bought from the pool, its price automatically increases, and as it is sold, the price decreases. This dynamic pricing system creates arbitrage opportunities that help keep prices aligned with broader market rates across different exchanges and trading platforms.</p>
+                
+                <p>When users trade on SushiSwap, they pay a small fee which is distributed among the liquidity providers who have deposited funds into the respective trading pairs. This fee structure creates a passive income stream for participants who contribute to the liquidity of the platform. Additionally, the SUSHI token rewards are distributed to liquidity providers through various incentive programs, further enhancing the potential returns for those who participate in the ecosystem.</p>
+            </div>
+
+            <div class="step-by-step">
+                <h3>Step-by-Step: Using SushiSwap</h3>
+                
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Connect Your Wallet</h4>
+                        <p>Start by installing a Web3 wallet like MetaMask and funding it with cryptocurrency. Visit the SushiSwap website and click "Connect Wallet" to establish a secure connection between your wallet and the decentralized exchange platform.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Select Your Tokens</h4>
+                        <p>Choose the token you want to sell from the "From" dropdown and the token you want to receive in the "To" field. SushiSwap supports hundreds of tokens across multiple blockchain networks, so make sure you're on the correct network for your assets.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Review the Trade</h4>
+                        <p>Enter the amount you want to swap and carefully review the exchange rate, price impact, and network fees. SushiSwap will show you exactly what you'll receive and any potential slippage that might occur with larger trades.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Confirm the Transaction</h4>
+                        <p>Click "Swap" and approve the transaction in your wallet. Depending on network congestion and gas prices, your transaction may take a few seconds
